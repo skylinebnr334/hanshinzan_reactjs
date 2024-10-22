@@ -13,8 +13,8 @@
     "webpack-dev-server": "^5.1.0"
   },
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w"
+    "build": "webpack -c webpack.release.config.js  --progress --color",
+    "start": "cross-env NODE_ENV=\"development\"  webpack-dev-server -c webpack.dev.config.js"
   },
   "dependencies": {
     "@types/react": "^18.3.11",
